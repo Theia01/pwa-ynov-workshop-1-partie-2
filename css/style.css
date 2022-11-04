@@ -50,7 +50,7 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 15rem auto;
+  width: 15rem;
   height: 15rem;
   background: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -74,9 +74,24 @@ h1 {
 }
 
 .card--link {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   text-decoration: none;
-  background: #db4938;
   color: #fff;
   padding: 0.3rem 1rem;
   border-radius: 20px;
+  animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
